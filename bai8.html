@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with Icons</title>
+    
+    <!-- Liên kết Font Awesome để hiển thị biểu tượng -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Kết nối với tệp CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS trong thẻ <style> cho nhanh */
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .menu-left, .menu-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .menu-left a, .menu-right a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .menu-right i {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-menu">
+        <div class="menu-left">
+            <a href="#">Rao vặt</a>
+            <a href="#">Tư vấn</a>
+            <a href="#">Hỏi đáp</a>
+            <a href="#">Hỗ trợ</a>
+        </div>
+        <div class="menu-right">
+            <!-- Biểu tượng giỏ hàng và con mắt -->
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#">Đăng ký</a>
+            <a href="#">Đăng nhập</a>
+        </div>
+    </div>
+</body>
+</html>
